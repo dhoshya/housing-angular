@@ -9,7 +9,7 @@
                 <form class="contact-form validate-form" #f="ngForm">
                     <div class="initial-view" >
                         <!-- <input class="input" type="text" name="name" placeholder="Full Name">
-                        
+
                         <input class="input" type="text" name="email" placeholder="Email"> -->
                         <div class="first-question" [ngStyle]="setFirstStyles()" >
                           <div class="add-question">
@@ -31,7 +31,7 @@
                           </div>
                             <input  class="input input-fields" ngModel #user="ngModel" name="username" id="usernames" placeholder="Enter the Host Name" required>
                             <span class="help-block" *ngIf="!user.valid && user.touched">Please enter the host name</span>
-                            <input class="input input-fields" ngModel #rental="ngModel" name="rental" id="rentals" placeholder="House Rental (per month)" required>
+                            <input class="input input-fields" ngModel #rental="ngModel" name="rental" id="rentals" placeholder="House Rental (per month in USD)" required>
                             <span class="help-block" *ngIf="!rental.valid && rental.touched">Please enter rental</span>
                           <div class="row no-margin">
                             <div class="col-sm-6">
@@ -42,7 +42,7 @@
                                 <option value="Mix">Mix</option>
                               </select>
                             </div>
-                            
+
                             <div class="col-sm-6 ">
                               <label for="rentalType input-fields-label">Number of Roommates?</label>
                               <select ngModel name="flatmattes" class="form-control input-fields" id="flatmat">
@@ -66,7 +66,7 @@
                               <option value="4">4</option>
                             </select>
                           </div>
-                          
+
                           <div class="col-sm-6 ">
                             <label for="rentalType input-fields-label">Baths</label>
                             <select class="form-control input-fields" ngModel name="baths" id="bath">
@@ -77,7 +77,7 @@
                           </div>
                         </div>
                           <button class="contact-form-btn" (click)="previousQuestion('first')">Back</button>
-                          <button class="contact-form-btn" (click)="nextQuestion('third')" [disabled]="!isValidSecondForm()">Next</button>
+                          <button class="contact-form-btn" (click)="nextQuestion('third')" >Next</button>
                         </div>
 
                         <div class="third-question" [ngStyle]="setThirdStyles()">
@@ -89,9 +89,9 @@
                               <div><input name="veggie" ngModel id="veggies" value="1" class="" type="checkbox"><label for="veggie" class="control-label"> Vegeterian </label></div>
                               <div><input name="shuttleservice" ngModel id="shuttleservices" value="1" class="shuttleservices" type="checkbox"><label for="veggie" class="control-label"> Shuttle Service </label></div>
                               <div><input name="garage" id="garages" ngModel value="1" class="" type="checkbox"><label for="garages" class="control-label"> Garage </label></div>
-                              
+
                             </div>
-                            
+
                             <div class="col-sm-6 ">
                                 <div><input name="dryer" ngModel id="dryers" value="1" class="" type="checkbox"><label for="dryers" class="control-label"> Dryer </label></div>
                                 <div><input name="aircontrol" ngModel id="aircontrols" value="1" class="shuttleservices" type="checkbox"><label for="aircontrols" class="control-label"> Shuttle Service </label></div>
@@ -121,8 +121,8 @@
                     </div>
                   </form>
             </div>
-            
+
           </div>
-          
+
     </div>
   </div>

@@ -9,13 +9,14 @@ import { PARAMETERS } from '@angular/core/src/util/decorators';
   templateUrl: './house-detail.component.html',
   styleUrls: ['./house-detail.component.css']
 })
+
 export class HouseDetailComponent implements OnInit {
   house: House;
   id: string;
 
 
   constructor(private houseService: HouseService,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute) { } 
 
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
