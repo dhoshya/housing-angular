@@ -1,6 +1,6 @@
 .jp-navigation-bar{
     background-color: #fd5c63 !important;
-    min-height: 70px;
+    min-height: 40px;
 }
 
 .jp-navigation-bar a{
@@ -108,4 +108,3 @@ border: 1px solid transparent;
     background-color: #fd5c63;
     color: #fff;
 }
-
